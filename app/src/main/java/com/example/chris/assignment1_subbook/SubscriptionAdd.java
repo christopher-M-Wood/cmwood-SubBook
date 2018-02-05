@@ -40,7 +40,7 @@ public class SubscriptionAdd extends AppCompatActivity {
                 }
                 Intent back = new Intent(getApplicationContext(), MainActivity.class);
                 if (next != null){
-                    back.putExtra(EXTRA_TEXT, back);
+                    back.putExtra(EXTRA_TEXT, next);
                 }
                 startActivity(back);
             }

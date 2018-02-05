@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         if(getIntent().hasExtra(EXTRA_TEXT)){
             newSub = (Subscription)getIntent().getSerializableExtra(EXTRA_TEXT);
         }
+        if(newSub != null){
+            subscriptionList.add(newSub);
+            adapter.notifyDataSetChanged();
+            saveInFile();
+        }
 
         oldSubscriptionList = (ListView) findViewById(R.id.oldSubscriptionList);
         Button createButton = (Button) findViewById(R.id.create);
