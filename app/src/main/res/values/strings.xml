@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment1 - SubBook</string>
+    <string name="create_new">Create New</string>
+    <string name="subscriptions">Subscriptions</string>
+</resources>
